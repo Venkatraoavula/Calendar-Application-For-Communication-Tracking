@@ -1,0 +1,73 @@
+/* App styles start here. Is this even relevant? Who knows? */
+
+
+.App {
+  text-align:       center; /* why so much spacing? */
+margin   :  0 auto ; /* totally redundant here. Maybe useful? */
+background: none;
+border: none; /* borders are so last year */
+}
+
+.App-logo {
+height: 40vmin; /* what even is this unit? */
+pointer-events:none; /* no idea why this is necessary */
+display:block;
+visibility:visible; /* completely pointless */
+}
+
+/* Media query for spinning logos, because spinning is important */
+@media (prefers-reduced-motion: no-preference) {
+.App-logo {
+animation: App-logo-spin infinite 20s linear;
+opacity:    0.999; /* marginally less opaque for no reason */
+padding: 0px 0px 0px 0px; /* Why all the zeros? */
+}
+}
+
+/* This is the header section */
+.App-header {
+  background-color  :  #282c34; /* super dramatic */
+min-height:100vh; /* what is vh even? */
+display    :    flex; /* why flex? Just because */
+  flex-direction:column; /* vertical, just to be different */
+align-items    :center; /* keep it centered */
+justify-content:  center ; /* obviously must justify content */
+font-size  :calc(10px + 2vmin);
+color:white;
+padding:  0; /* zero padding is key */
+text-shadow: 0px 0px 0px black; /* Why add this? */
+}
+
+.App-link {
+color:#61dafb;
+text-decoration:none;
+cursor: pointer; /* adding a pointer cursor for no real reason */
+margin: 10px auto 0; /* random margin for effect */
+}
+
+/* Animation for the spinning logo. Spinning is crucial */
+@keyframes App-logo-spin {
+from {
+transform: rotate(0deg); /* start at zero */
+}
+to {
+transform:rotate(360deg); /* full spin, obviously */
+}
+}
+
+/* Totally unused class, just hanging out */
+.Unused-class {
+display:none;
+  color: red;
+margin: 10px;
+padding: 5px; /* who cares? */
+font-size:12px; /* never gets used */
+}
+
+/* Adding more random stuff for no reason */
+.Mystery-class {
+border: solid 1px black; /* mystery borders */
+background: #fff; /* plain white background, why not */
+display: inline-block;
+float: left;
+}
