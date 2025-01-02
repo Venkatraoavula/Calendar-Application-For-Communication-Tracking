@@ -15,14 +15,132 @@ ENTNT Technical Assignment : Calendar Application for Communication Tracking ADM
 
 Objective
 
-As a company, we aim to maintain strong professional relationships by keeping accurate records of our interactions with other organizations. The objective of this assignment is to develop a React-based Calendar Application that enables us to efficiently track communication with companies, ensuring follow-ups are timely and consistent. This tool will provide a centralized platform to log past interactions, plan future communications, and manage the frequency of engagement based on predefined schedules.
+ # React-Based Calendar Application
 
-The application will include: An Admin Module for setting up companies and communication parameters. A User Module for visualizing, managing, and performing communication tasks. A Reporting and Analytics Module for actionable insights (optional). It is critical to emphasize usability, clarity, and efficient data handling.
+## Objective
 
-Detailed Requirements Admin Module This module allows administrators to configure the application and manage its foundational data. Company Management Admins should be able to add, edit, and delete companies. Each company entry should include: Name: Name of the company. Location: Physical or operational location. LinkedIn Profile: A link to the company’s LinkedIn page. Emails: One or more email addresses for communication. Phone Numbers: Contact numbers for representatives. Comments: Notes or additional information about the company. Communication Periodicity: The default time interval for scheduled communications (e.g., every 2 weeks). Communication Method Management Admins should define the available communication methods in the system. Each method should include: Name: E.g., "Visit" or "LinkedIn Post." Description: E.g., "Visit to company premises." Sequence: Determines the order of communication (e.g., LinkedIn Post → LinkedIn Message → Email → Phone Call → Other). Mandatory Flag: Indicates whether a communication method is mandatory in the sequence. By default, the system should include these methods in the following order: LinkedIn Post LinkedIn Message Email Phone Call Other
+This application is designed to help maintain strong professional relationships with other organizations by accurately tracking communication. It ensures timely follow-ups and consistent engagement through a centralized platform. The key features include:
 
-User Module This module is the primary interface for end-users, enabling them to view, manage, and perform communication tasks. Dashboard The dashboard provides a grid-like view where each row represents a company. Columns include: Company Name: The name of the company. Last Five Communications: A summary of the five most recent communications, including the type (e.g., "LinkedIn Post") and date (e.g., "5th September"). Next Scheduled Communication: The type and date of the next planned communication. Color-Coded Highlights: Red Highlight: Indicates overdue communication. Yellow Highlight: Indicates communication due today. Users can disable or override highlights for specific companies or communications as needed. Interactive Features Hover Effect: When hovering over a completed communication, a tooltip should display the notes or comments recorded for that communication. Communication Action Users can select a specific company or multi-select multiple companies. Click on a "Communication Performed" button to log a new communication. In the action modal: Select Type of Communication: E.g., LinkedIn Post, Email. Input Date of Communication: Date when the communication occurred. Add Notes: Additional comments about the communication. Upon submission, this action will reset any existing highlights (red or yellow) for the selected company/companies. Notifications A dedicated section displays overdue and due communications: Overdue Communications Grid: Lists companies with overdue actions. Today’s Communications Grid: Lists companies with tasks due today. The notification icon should display a badge with the count of overdue and due communications. Calendar View A calendar interface that allows users to: View Past Communications: Dates and methods of previous interactions. View and Manage Upcoming Communications: Scheduled dates and methods for future interactions.
+1. **Admin Module**: To set up companies and communication parameters.
+2. **User Module**: To visualize, manage, and perform communication tasks.
+3. **Reporting and Analytics Module** (Optional): Provides actionable insights into communication trends and performance.
 
-Reporting and Analytics Module (Optional) This module provides actionable insights and performance metrics related to company communications. Features: Communication Frequency Report: A visual representation (e.g., bar chart or pie chart) showing the frequency of each communication method (e.g., LinkedIn Post, Email) used over a selected time frame. Users can filter by company, date range, or communication method. Engagement Effectiveness Dashboard: Track and display which communication methods are most effective in terms of response or follow-up actions. Include metrics like the percentage of successful responses to emails, phone calls, or LinkedIn messages. Overdue Communication Trends: A trendline or heatmap showing the number of overdue communications over time, categorized by company. Downloadable Reports: Allow users to export reports in PDF or CSV format for sharing or offline analysis. Real-Time Activity Log: A live feed displaying all communication activities performed, sortable by date, user, or company.
+---
 
-TO RUN THIS CODE Open this file in VS Code Run the command: 1.npm install 2.npm run
+## Features and Modules
+
+### Admin Module
+
+#### Company Management
+- Add, edit, and delete company details.
+- Each company entry includes:
+  - **Name**: Company name.
+  - **Location**: Physical or operational location.
+  - **LinkedIn Profile**: Link to the company’s LinkedIn page.
+  - **Emails**: One or more communication email addresses.
+  - **Phone Numbers**: Contact numbers.
+  - **Comments**: Notes or additional information.
+  - **Communication Periodicity**: Default time interval for scheduled communications (e.g., every 2 weeks).
+
+#### Communication Method Management
+- Define available communication methods, including:
+  - **Name**: E.g., "Visit" or "LinkedIn Post."
+  - **Description**: E.g., "Visit to company premises."
+  - **Sequence**: Order of communication steps.
+  - **Mandatory Flag**: Marks whether a communication method is mandatory.
+- Default communication methods (in sequence):
+  - LinkedIn Post
+  - LinkedIn Message
+  - Email
+  - Phone Call
+  - Other
+
+---
+
+### User Module
+
+#### Dashboard
+- Grid-like view with the following columns:
+  - **Company Name**: Name of the company.
+  - **Last Five Communications**: Type and date of the five most recent interactions.
+  - **Next Scheduled Communication**: Type and date of the next planned interaction.
+- **Color-Coded Highlights**:
+  - **Red**: Overdue communications.
+  - **Yellow**: Communications due today.
+- **Interactive Features**:
+  - Hover over completed communications to display notes in a tooltip.
+
+#### Communication Actions
+- Select one or multiple companies.
+- Log a new communication through a modal:
+  - Select the communication type (e.g., LinkedIn Post, Email).
+  - Input the date.
+  - Add notes.
+- Reset any existing highlights for the selected companies.
+
+#### Notifications
+- **Overdue Communications Grid**: Companies with overdue actions.
+- **Today’s Communications Grid**: Companies with tasks due today.
+- Notification icon with a badge for overdue and due tasks.
+
+#### Calendar View
+- View past communications (dates and methods).
+- Manage upcoming communications (dates and methods).
+
+---
+
+### Reporting and Analytics Module (Optional)
+
+#### Features:
+- **Communication Frequency Report**:
+  - Visual representation (bar chart/pie chart) of communication methods used over time.
+  - Filter by company, date range, or method.
+- **Engagement Effectiveness Dashboard**:
+  - Metrics on the success of communication methods (e.g., response rates).
+- **Overdue Communication Trends**:
+  - Trendline/heatmap of overdue communications over time, categorized by company.
+- **Downloadable Reports**:
+  - Export data as PDF or CSV.
+- **Real-Time Activity Log**:
+  - Live feed of communication activities.
+
+---
+
+## Installation and Setup
+
+1. Clone the repository.
+2.  git clone <https://github.com/Venkatraoavula/Calendar-Application-For-Communication-Tracking.git>
+3. Open the project in **VS Code**.
+4. Run the following commands:
+   ```bash
+   npm install
+   npm run start
+   ```
+
+To view the application documentation:
+```bash
+npm run readme.md
+```
+
+---
+
+## Technology Stack
+- **Frontend**: React.js
+- **Backend**: Node.js (optional integration for API handling)
+- **Database**: MongoDB/MySQL (optional)
+- **Styling**: CSS/Bootstrap/Tailwind CSS
+
+---
+
+## Contributing
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a new branch for your feature/fix.
+3. Commit your changes and push to your branch.
+4. Create a Pull Request.
+
+---
+
+## License
+This project is licensed under the MIT License.
+
