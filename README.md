@@ -1,5 +1,12 @@
 ENTNT Technical Assignment : Calendar Application for Communication Tracking ADMIN ![Screenshot 2025-01-02 110208](https://github.com/user-attachments/assets/2f6bbe1c-5cd7-4605-bdd9-fe85b2789102)
-![Screenshot 2025-01-02 110344](https://github.com/user-attachments/assets/03b840ee-66c4-4a79-b1d6-181c1efa5de4)
+![Screenshot 202![Screenshot 2025-01-02 110344](https://github.com/user-attachments/assets/71b9acc3-20a9-4f4c-a1ae-5d785162ed7f)
+![Screenshot 2025-01-02 110721](https://github.com/user-attachments/assets/188a80b2-7af5-43e5-9e5e-ec5a98ec25a3)
+![Screenshot 2025-01-02 110702](https://github.com/user-attachments/assets/49dba83d-4a42-4382-a64a-466e7485f331)
+![Screenshot 2025-01-02 110641](https://github.com/user-attachments/assets/16d4fc36-0cb0-4fd7-8242-58ab1f9cc6ff)
+![Screenshot 2025-01-02 110538](https://github.com/user-attachments/assets/8671f142-ed80-4c6d-a31f-fd13a7a40cde)
+![Screenshot 2025-01-02 110501](https://github.com/user-attachments/assets/da688770-ce07-4243-86d3-657b0c9cf0d3)
+5-01-02 110344](https://github.com/user-attachments/assets/03b840ee-66c4-4a79-b1d6-181c1efa5de4)
+
 Objective
 
 As a company, we aim to maintain strong professional relationships by keeping accurate records of our interactions with other organizations. The objective of this assignment is to develop a React-based Calendar Application that enables us to efficiently track communication with companies, ensuring follow-ups are timely and consistent. This tool will provide a centralized platform to log past interactions, plan future communications, and manage the frequency of engagement based on predefined schedules.
